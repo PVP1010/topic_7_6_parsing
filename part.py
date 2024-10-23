@@ -18,15 +18,15 @@ for lustra in lustras:
         title = title_element.text
         link = title_element.get_attribute('href')
         try:
-            salary = lustra.find_element(By.CSS_SELECTOR, 'div.product-card__price').text
+            price = lustra.find_element(By.CSS_SELECTOR, 'div.product-card__price').text
         except:
-            salary = "Не указана"
+            price = "Не указана"
 
     except Exception as e:
         print(f"Произошла ошибка при парсинге: {e}")
         continue
 
-    parsed_data.append([title, salary, link])
+    parsed_data.append([title, price, link])
 
 driver.quit()
 
