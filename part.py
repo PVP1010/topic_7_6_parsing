@@ -1,5 +1,5 @@
-import time                                                                                                             # Импортируем модуль со временем
-import csv                                                                                                              # Импортируем модуль csv
+import time
+import csv
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
